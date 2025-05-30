@@ -14,6 +14,8 @@
     - 项目迁移。仅修改_BASE_DIR。
 """
 
+from __future__ import annotations
+
 from pathlib import Path
 from pydantic import BaseModel, Field
 
@@ -33,7 +35,7 @@ def get_file_tree(
     全局的获取文件树的方法。
 
     Args:
-        base_dir: 最根本的路径，其他路径都为其子路径。
+        base_dir (str, optional): 最根本的路径，其他路径都为其子路径。
 
     Returns:
         具体的所有子路径，都是Path对象。
