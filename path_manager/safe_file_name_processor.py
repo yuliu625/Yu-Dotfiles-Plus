@@ -2,6 +2,8 @@
 路径非法字符处理映射方法。
 """
 
+from __future__ import annotations
+
 import re
 
 
@@ -20,7 +22,7 @@ class SafeFileNameProcessor:
         为了灵活自定义，这个工具类需要实例化。
 
         Args:
-            custom_map: 增加或替换的映射规则。
+            custom_map (dict): 增加或替换的映射规则。
         """
         # 默认的字符映射表(非法字符 -> 替代字符串)
         self.encode_map = {
