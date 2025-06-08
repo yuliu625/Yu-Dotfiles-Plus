@@ -32,14 +32,24 @@ if TYPE_CHECKING:
 - \_\_init__.py中是相对路径，但是仅添加确定的稳定功能。
 - 仅完全确定和稳定在同一文件夹下程序使用相对路径。如果使用相对路径，不超过2级。
 ### Special Programs
-- interface.py: 抽象类。在文件初始说明。
+- schemas.py: 数据类。为避免问题，数据类不使用TYPE_CHECKING。
+```python
+from __future__ import annotations
+from pydantic import BaseModel, Field, ConfigDict
+```
+- interface.py: 抽象类。
 ```python
 from __future__ import annotations
 from abc import ABC, abstractmethod
 ```
-- test.py: 测试工程。在文件初始说明。
+- test.py: 测试工程。
 ```python
 from __future__ import annotations
 import pytest
+```
+- async.py: 含有异步编程。在以上导入后直接写，独立后续导入。
+```python
+from __future__ import annotations
+import asyncio
 ```
 
