@@ -42,7 +42,7 @@ from pydantic import BaseModel, Field, ConfigDict
 from __future__ import annotations
 from abc import ABC, abstractmethod
 ```
-- test.py: 测试工程。
+- test.py: 测试工程。测试文件总是使用绝对路径导入。
 ```python
 from __future__ import annotations
 import pytest
