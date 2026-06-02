@@ -1,8 +1,8 @@
-# Development Toolkit
+# Dotfiles Plus
 ## Overview
 
 
-## A Note on the Project's Philosophy
+## Philosophy
 
 
 ## More
