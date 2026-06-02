@@ -1,8 +1,17 @@
 """
-路径非法字符处理映射方法。
+Sources:
+
+References:
+
+Synopsis:
+    路径非法字符处理映射方法。
+
+Notes:
+
 """
 
 from __future__ import annotations
+from loguru import logger
 
 import re
 
@@ -17,6 +26,7 @@ class SafeFileNameProcessor:
     以固定的规则对文件名进行编解码。
     可能会在解码时出现问题。
     """
+
     def __init__(
         self,
         custom_map: dict = None
