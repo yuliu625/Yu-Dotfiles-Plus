@@ -1,8 +1,17 @@
 """
-自动修改文件扩展名。
+Sources:
+
+References:
+
+Synopsis:
+    自动修改文件扩展名。
+
+Notes:
+
 """
 
 from __future__ import annotations
+from loguru import logger
 
 import os
 from pathlib import Path
