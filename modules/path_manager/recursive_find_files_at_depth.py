@@ -1,10 +1,22 @@
 """
-按照指定深度查找指定文件名的文件。
+Sources:
+
+References:
+
+Synopsis:
+    按照指定深度查找指定文件名的文件。
+
+Notes:
+
 """
 
 from __future__ import annotations
+from loguru import logger
 
 from pathlib import Path
+
+from typing import TYPE_CHECKING
+# if TYPE_CHECKING:
 
 
 def recursive_find_files_at_depth(
